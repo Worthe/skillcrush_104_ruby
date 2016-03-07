@@ -39,6 +39,10 @@ class BlogPost
     blog_post.content = gets.chomp
     blog_post.created_at = Time.now
     blog_post.save
+    puts "Do you want to create another masterful blog post answer Y/N"
+    create if gets.chomp.downcase == 'y'
+      
+    end
 
   end
 
